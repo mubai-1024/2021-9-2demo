@@ -55,5 +55,10 @@ public class ChannelController {
             throw new RuntimeException("数据导出失败");
         }
     }
+
+    // 测试第二次提交
+    public void test(){
+
+    }
 }
 

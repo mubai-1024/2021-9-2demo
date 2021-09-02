@@ -1,0 +1,15 @@
+server:
+  port: 8099
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.10.100:1521:cbs
+    username: cbs
+    password: cbs
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/bankofwuhai/core/mapper/xml/*.xml
